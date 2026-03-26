@@ -1,5 +1,5 @@
-import { NextFunction, Request, Response } from "express";
 import client from "prom-client";
+
 
 // Create a counter metric
 export const requestCounter = new client.Counter({

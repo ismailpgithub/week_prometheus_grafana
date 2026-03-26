@@ -3,6 +3,7 @@ import { requestCounter } from "./requestCount";
 import { activeRequestsGauge } from "./activeRequests";
 import { httpRequestDurationMicroseconds } from "./requestTime";
 
+
 export const metricsMiddleware = (req: Request, res: Response, next: NextFunction) => {
     const startTime = Date.now();
     activeRequestsGauge.inc();

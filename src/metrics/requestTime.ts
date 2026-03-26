@@ -1,5 +1,6 @@
 import client from "prom-client";
 
+
 export const httpRequestDurationMicroseconds = new client.Histogram({
     name: 'http_request_duration_ms',
     help: 'Duration of HTTP requests in ms',
